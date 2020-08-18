@@ -8,7 +8,7 @@
     <title>Quick Tip</title>
 </head>
 <body>
-    <main>
+    <main >
         <h1>Quick Tip</h1>
 
         <section>
@@ -18,7 +18,6 @@
                 type="number" 
                 placeholder="Your bill" 
                 id="yourBill"
-                oninput="update()"
                 />
             </div>
             <div>
@@ -59,8 +58,12 @@
     </main>
     <script>
         function update(){
-            console.log('function called');
+            let bill = document.getElementById("yourBill").value;
+            let tipPercent = document.getElementById("tipInput").value;
+            let split = document.getElementById("splitInput").value;
         }
+
+        
     </script>
 </body>
 </html>
