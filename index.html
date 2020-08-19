@@ -65,6 +65,8 @@
             let tipValue = bill * (tipPercent / 100);
             let tipEach = tipValue / split;
             let newBillEach = (bill + tipValue) / split;
+
+            document.getElementById("tipPercent").innerHTML = tipPercent;
         }
 
         let container = document.getElementById('container');
