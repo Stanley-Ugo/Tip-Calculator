@@ -62,6 +62,11 @@
             return "$ " + value;
         }
 
+        function formatSplit(value){
+            if (value === "1") return value + " person";
+            return value + " people";
+        }
+
         function update(){
             let bill = Number(document.getElementById("yourBill").value);
             let tipPercent = document.getElementById("tipInput").value;
