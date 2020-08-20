@@ -75,8 +75,8 @@
             document.getElementById("tipValue").innerHTML = formatMoney(tipValue);
             document.getElementById("totalWithTip").innerHTML = formatMoney(bill + tipValue);
             document.getElementById("splitValue").innerHTML = split;
-            document.getElementById("billEach").innerHTML = newBillEach;
-            document.getElementById("tipEach").innerHTML = tipEach;
+            document.getElementById("billEach").innerHTML = formatMoney(newBillEach);
+            document.getElementById("tipEach").innerHTML = formatMoney(tipEach);
         }
 
         let container = document.getElementById('container');
